@@ -1,0 +1,10 @@
+title: My Portfolio
+description: Welcome to my website
+remote_theme: pages-themes/minimal@v0.2.0
+
+# If you want to use a different theme, change the 'remote_theme' line
+# Common options: 
+# pages-themes/architect
+# pages-themes/cayman
+# pages-themes/merlot
+# pages-themes/slate
