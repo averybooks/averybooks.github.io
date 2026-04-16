@@ -28,11 +28,27 @@ author: phlow
 url: 'https://averybooks.github.io'
 baseurl: ''
 
+theme: null
+remote_theme: "Phlow/feeling-responsive"
+
+markdown: kramdown
+highlighter: rouge
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Performance
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
 improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
-remote_theme: "Phlow/feeling-responsive"
-remote_theme: "Phlow/feeling-responsive"
+
+
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
 #
