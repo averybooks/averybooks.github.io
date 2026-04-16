@@ -1,6 +1,9 @@
 ---
-layout: default
-title: Home
+layout: page-fullwidth
+title: "Your Name Portfolio"
+meta_description: "Welcome to my portfolio website."
+header:
+  image_fullwidth: "header_homepage.jpg"
 ---
 # Hi, I'm Avery Books.
 I'm a Undergraduate Astrophysics student based in Berkeley, CA. I love astronomy, RF engineering, photonics, archery, ice hockey, and art/music.
