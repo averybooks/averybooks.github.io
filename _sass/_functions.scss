@@ -69,12 +69,7 @@ $modules: (
       @return $value / 1pt;
     }
   }
-}
-
-  @else {
-    @warn "Not a number value: #{$value}";
-    @return $value;
-  }
+  @return $value;
 }
 
 // TEXT INPUT TYPES
