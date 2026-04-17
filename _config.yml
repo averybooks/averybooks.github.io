@@ -42,8 +42,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-  - vendor
-  - .git
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 # This is for the editing function in _/includes/improve_content
 # Leave it empty if your site is not on GitHub/GitHub Pages
 improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
@@ -63,9 +65,9 @@ logo: "logo.png"
 
 # Plugins
 plugins:
-    - jekyll-asciidoc
-    - jekyll-gist
-    - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
 
 #       ____              _             __  _
