@@ -47,3 +47,30 @@ sitemap:
 {% endif %}
 
 @import "11_syntax-highlighting.scss";
+
+
+/* =========================================
+   CUSTOM NAVIGATION OVERRIDES
+   ========================================= */
+   .top-bar-section ul li > a {
+    /* 1. Adjust the width/spacing (Top/Bottom 0, Left/Right 20px) */
+    padding: 0 20px !important; 
+
+    /* 2. Adjust the border thickness, style, and color */
+    border-right: 2px solid #cccccc !important; 
+
+    /* 3. Adjust the text color */
+    color: #333333 !important; 
+    
+    font-weight: bold !important;
+}
+
+/* Remove the border from the very last item so it looks clean */
+.top-bar-section ul li:last-child > a {
+    border-right: none !important;
+}
+
+/* Change the color when you hover over a link */
+.top-bar-section ul li > a:hover {
+    color: #0078A8 !important; 
+}
