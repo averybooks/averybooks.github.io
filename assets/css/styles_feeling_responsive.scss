@@ -54,24 +54,25 @@ sitemap:
    ========================================= */
 
 /* 1. Change the Main Header Background Color */
-.top-bar {
-    background-color: #1a1a1a !important; /* Change this to your desired header background */
-}
-
-/* 2. Change the Background Color of the Menu Items */
-.top-bar-section ul li, 
 .top-bar-section ul li > a {
-    background-color: #1a1a1a !important; /* Make sure this matches the top-bar color so it blends */
-    
-    /* 3. Adjust the Font Settings */
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; /* Change your font here */
-    font-size: 16px !important; /* Make the text larger or smaller */
-    color: #ffffff !important; /* Text color */
-    
     padding: 0 20px !important; 
-    border-right: 2px solid #333333 !important; 
+    /* Remove the previous border-right from here */
+    border-right: none !important; 
+    font-weight: bold !important;
+    background: transparent !important;
 }
 
+/* Apply the border ONLY to the list item to prevent height artifacts */
+.top-bar-section ul li:not(:last-child) {
+    border-right: 1px solid #444444 !important; 
+}
+
+/* Ensure the container doesn't show background artifacts */
+.top-bar, .top-bar-section, .top-bar-section ul {
+    background: #1a1a1a !important;
+    border: none !important;
+    box-shadow: none !important;
+}
 /* Change the color when you hover over a link */
 .top-bar-section ul li > a:hover {
     background-color: #333333 !important; /* Background color on hover */
