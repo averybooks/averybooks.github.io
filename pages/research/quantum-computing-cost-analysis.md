@@ -13,15 +13,15 @@ This research explores the qubit cost of a physical Shor's quantum factoring alg
 
 
 <div class="row">
-  <div class="medium-8 columns">
-    <h2>Full Report</h2>
+  <div class="medium-10 columns">
+    <h3>Full Report</h3>
     <iframe src="{{ site.url }}/assets/pdfs/Resource Cost of Shor's Quantum Algorithm Paper.pdf" width="100%" height="800px">
     <p>This browser does not support PDFs. Please download the PDF to view it: 
     <a href="{{ site.url }}/assets/pdfs/Resource Cost of Shor's Quantum Algorithm Paper.pdf">Download PDF</a>.</p>
 </iframe>
   </div>
 
-  <div class="medium-4 columns" style="background: #f4f4f4; padding: 20px; border-radius: 5px;">
+  <div class="medium-3 columns" style="background: #f4f4f4; padding: 20px; border-radius: 5px;">
     <h4>Study Details</h4>
     <ul>
       <li><strong>Date:</strong> December 2025 </li>
