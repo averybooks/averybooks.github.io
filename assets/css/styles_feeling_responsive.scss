@@ -89,7 +89,7 @@ sitemap:
 
 /* 1. Expand the maximum width of all rows */
 .row {
-    max-width: 85% !important; /* Changes from a fixed pixel width to 95% of the screen */
+    max-width: 95% !important; /* Changes from a fixed pixel width to 95% of the screen */
 }
 
 /* 2. Remove padding from the main content wrapper */
@@ -100,5 +100,5 @@ sitemap:
 
 /* 3. If your theme has a 't-container', expand it too */
 .t-container {
-    max-width: 85% !important;
+    max-width: 95% !important;
 }
