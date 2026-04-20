@@ -83,3 +83,22 @@ sitemap:
 .top-bar-section ul li:last-child > a {
     border-right: none !important;
 }
+/* =========================================
+   REMOVING WHITE SPACE / EXPANDING PAGE
+   ========================================= */
+
+/* 1. Expand the maximum width of all rows */
+.row {
+    max-width: 85% !important; /* Changes from a fixed pixel width to 95% of the screen */
+}
+
+/* 2. Remove padding from the main content wrapper */
+#main {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* 3. If your theme has a 't-container', expand it too */
+.t-container {
+    max-width: 85% !important;
+}
