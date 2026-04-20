@@ -17,7 +17,7 @@ This research explores the qubit cost of a physical Shor's quantum factoring alg
     <h2>Full Report</h2>
     <iframe src="{{ site.url }}/assets/pdfs/Resource Cost of Shor_s Quantum Algorithm Paper.pdf" width="100%" height="800px">
     <p>This browser does not support PDFs. Please download the PDF to view it: 
-    <a href="{{ site.url }}/assets/pdfs/Resource Cost of Shor_s Quantum Algorithm Paper.pdf">Download PDF</a>.</p>
+    <a href="{{ site.url }}/assets/pdfs/Resource Cost of Shor's Quantum Algorithm Paper.pdf">Download PDF</a>.</p>
 </iframe>
   </div>
 
