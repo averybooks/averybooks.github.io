@@ -52,6 +52,26 @@ sitemap:
 /* =========================================
    CUSTOM NAVIGATION OVERRIDES
    ========================================= */
+/* 1. Force the background for the entire header bar */
+.top-bar, 
+.top-bar-section, 
+.top-bar-section ul, 
+.top-bar-section li, 
+.top-bar-section li a,
+.top-bar .title-area, 
+.top-bar .name,
+.top-bar .name h1 a {
+    background-color: #1a1a1a !important; 
+    background: #1a1a1a !important;
+}
+
+/* 2. Target the specific 'Home' highlight if it's marked as active */
+.top-bar-section li.active:not(.has-form) a:not(.button),
+.top-bar-section li.active:not(.has-form) a,
+.top-bar-section li.active {
+    background: #123459 !important; /* Your new blue */
+}
+
 
 /* 1. Change the Main Header Background Color */
 .top-bar-section ul li > a {
@@ -114,19 +134,23 @@ sitemap:
 }
 
 /* Target the logo in the navigation bar */
-.top-bar .title-area .logo img {
-    max-height: 40px !important; /* This shrinks it to fit the bar */
+/* This targets the logo in the top navigation bar specifically */
+nav.top-bar .title-area .logo img,
+nav.top-bar .title-area .name img,
+nav.top-bar img {
+    max-height: 38px !important; /* Slightly smaller for a cleaner look */
     width: auto !important;
-    padding: 5px;
-    
-    /* This filter approximates a Dark Cyan (#008B8B) from a white image */
-    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%);
+    display: inline-block !important;
+    vertical-align: middle !important;
+    margin-top: 4px !important; /* Centers it vertically */
 }
 
-/* Optional: If you want the giant one on the homepage to also be Cyan & Small */
-.home-logo-class { 
-    max-width: 200px;
-    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%);
+/* This targets the giant logo on the homepage / masthead */
+#masthead img, 
+.entry-title img,
+header img {
+    max-width: 200px !important; /* Adjust this to your preferred size */
+    height: auto !important;
 }
 
 .title-area {
