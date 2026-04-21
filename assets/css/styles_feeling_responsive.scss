@@ -64,19 +64,25 @@ sitemap:
 
 /* Apply the border ONLY to the list item to prevent height artifacts */
 .top-bar-section ul li:not(:last-child) {
-    border-right: 1px solid #444444 !important; 
+    border-right: 1px solid #123459 !important; 
 }
 
 /* Ensure the container doesn't show background artifacts */
 .top-bar, .top-bar-section, .top-bar-section ul {
-    background: #1a1a1a !important;
+    background: #123459 !important;
     border: none !important;
     box-shadow: none !important;
 }
 /* Change the color when you hover over a link */
 .top-bar-section ul li > a:hover {
-    background-color: #333333 !important; /* Background color on hover */
-    color: #0078A8 !important; /* Text color on hover */
+    background-color: #123459 !important; 
+    color: #008B8B !important; /* This is the Dark Cyan you liked earlier */
+}
+
+/* Keeps the 'Research' tab highlighted when you are on that page */
+.top-bar-section ul li.active > a {
+    background-color: #123459 !important;
+    color: #008B8B !important;
 }
 
 /* Remove the border from the very last item */
@@ -107,7 +113,22 @@ sitemap:
     margin-right: 20px !important;
 }
 
-/* Ensure the logo doesn't look squashed */
-.logo img {
-    padding: 5px 0;
+/* Target the logo in the navigation bar */
+.top-bar .title-area .logo img {
+    max-height: 40px !important; /* This shrinks it to fit the bar */
+    width: auto !important;
+    padding: 5px;
+    
+    /* This filter approximates a Dark Cyan (#008B8B) from a white image */
+    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%);
+}
+
+/* Optional: If you want the giant one on the homepage to also be Cyan & Small */
+.home-logo-class { 
+    max-width: 200px;
+    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%);
+}
+
+.title-area {
+    padding-left: 15px;
 }

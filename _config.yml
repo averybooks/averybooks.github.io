@@ -63,6 +63,8 @@ urlimg: 'logo-with-name-transparent.png'
 
 # Logo size is 600x80 pixels
 logo: "logo-with-name-transparent.png"
+header:
+  logo: "logo-with-name-transparent.png"
 
 # Plugins
 plugins:
