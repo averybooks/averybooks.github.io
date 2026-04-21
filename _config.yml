@@ -51,17 +51,18 @@ exclude:
 improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 keep_files: ["assets/pdfs"]
 
+
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
 #
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://phlow.github.io/feeling-responsive/images/'
+urlimg: 'logo-with-name-transparent.png'
 
 
 # Logo size is 600x80 pixels
-logo: "logo.png"
+logo: "logo-with-name-transparent.png"
 
 # Plugins
 plugins:

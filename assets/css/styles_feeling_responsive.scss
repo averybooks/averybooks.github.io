@@ -102,3 +102,12 @@ sitemap:
 .t-container {
     max-width: 95% !important;
 }
+/* Add breathing room between the logo and the first menu item */
+.top-bar .title-area {
+    margin-right: 20px !important;
+}
+
+/* Ensure the logo doesn't look squashed */
+.logo img {
+    padding: 5px 0;
+}
