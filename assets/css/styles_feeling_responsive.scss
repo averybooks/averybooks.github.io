@@ -65,50 +65,42 @@ sitemap:
     background: #123459 !important;
 }
 
-/* 2. Target the specific 'Home' highlight if it's marked as active */
-.top-bar-section li.active:not(.has-form) a:not(.button),
-.top-bar-section li.active:not(.has-form) a,
-.top-bar-section li.active {
-    background: #408bdc !important; /* Your new blue */
-}
+/* =========================================
+HEADER & NAVIGATION FINAL FIX
+========================================= */
 
-
-/* 1. Change the Main Header Background Color */
-.top-bar-section ul li > a {
-    padding: 0 20px !important; 
-    /* Remove the previous border-right from here */
-    border-right: none !important; 
-    font-weight: bold !important;
-    background: transparent !important;
-}
-
-/* Apply the border ONLY to the list item to prevent height artifacts */
-.top-bar-section ul li:not(:last-child) {
-    border-right: 1px solid #123459 !important; 
-}
-
-/* Ensure the container doesn't show background artifacts */
+/* 1. Main Header Background (Dark Navy) */
 .top-bar, .top-bar-section, .top-bar-section ul {
-    background: #123459 !important;
-    border: none !important;
-    box-shadow: none !important;
+ background: #123459 !important;
+ border: none !important;
 }
-/* Change the color when you hover over a link */
+
+/* 2. Standard Link Style (White text on the Navy background) */
+.top-bar-section ul li > a {
+ padding: 0 20px !important; 
+ font-weight: bold !important;
+ color: #ffffff !important; 
+ background: transparent !important;
+}
+
+/* 3. THE HOVER STATE: Bright Blue background + Black text */
 .top-bar-section ul li > a:hover {
-    background-color: #123459 !important; 
-    color: #008B8B !important; /* This is the Dark Cyan you liked earlier */
+ background-color: #00BFFF !important; /* Bright Blue */
+ color: #000000 !important;          /* Black Text */
 }
 
-/* Keeps the 'Research' tab highlighted when you are on that page */
-.top-bar-section ul li.active > a {
-    background-color: #008B8B !important;
-    color: #008B8B !important;
+/* 4. THE ACTIVE STATE: Highlight the page you are currently on */
+.top-bar-section li.active > a,
+.top-bar-section li.active:not(.has-form) a {
+ background-color: #408bdc !important; /* A slightly different blue for 'Active' */
+ color: #ffffff !important;
 }
 
-/* Remove the border from the very last item */
-.top-bar-section ul li:last-child > a {
-    border-right: none !important;
+/* 5. Vertical Separator Lines */
+.top-bar-section ul li:not(:last-child) {
+ border-right: 1px solid rgba(255,255,255,0.1) !important; 
 }
+
 /* =========================================
    REMOVING WHITE SPACE / EXPANDING PAGE
    ========================================= */
