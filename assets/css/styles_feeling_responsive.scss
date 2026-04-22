@@ -61,15 +61,15 @@ sitemap:
 .top-bar .title-area, 
 .top-bar .name,
 .top-bar .name h1 a {
-    background-color: #1a1a1a !important; 
-    background: #1a1a1a !important;
+    background-color: #123459 !important; 
+    background: #123459 !important;
 }
 
 /* 2. Target the specific 'Home' highlight if it's marked as active */
 .top-bar-section li.active:not(.has-form) a:not(.button),
 .top-bar-section li.active:not(.has-form) a,
 .top-bar-section li.active {
-    background: #123459 !important; /* Your new blue */
+    background: #408bdc !important; /* Your new blue */
 }
 
 
@@ -155,4 +155,20 @@ header img {
 
 .title-area {
     padding-left: 15px;
+}
+
+/* Target the logo inside the Navigation Bar on ALL pages */
+.top-bar .title-area .logo img,
+.top-bar .title-area img,
+.name img {
+    max-height: 40px !important; /* Force it to fit the bar height */
+    width: auto !important;
+    padding: 5px 0 !important;
+    display: inline-block !important;
+}
+
+/* Ensure the container doesn't expand to fit a ghost image size */
+.top-bar .title-area, .top-bar .name {
+    max-height: 45px !important;
+    overflow: hidden;
 }
