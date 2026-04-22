@@ -69,36 +69,52 @@ sitemap:
 HEADER & NAVIGATION FINAL FIX
 ========================================= */
 
-/* 1. Main Header Background (Dark Navy) */
-.top-bar, .top-bar-section, .top-bar-section ul {
- background: #123459 !important;
- border: none !important;
+/* =========================================
+   HEADER & NAVIGATION - VERIFIED CLEAN CODE
+   ========================================= */
+
+/* 1. Main Header Bar Colors */
+.top-bar, 
+.top-bar-section, 
+.top-bar-section ul {
+    background: #123459 !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-/* 2. Standard Link Style (White text on the Navy background) */
+/* 2. Link Text Style */
 .top-bar-section ul li > a {
- padding: 0 20px !important; 
- font-weight: bold !important;
- color: #ffffff !important; 
- background: transparent !important;
+    padding: 0 20px !important; 
+    font-weight: bold !important;
+    color: #ffffff !important;
+    background: transparent !important;
 }
 
-/* 3. THE HOVER STATE: Bright Blue background + Black text */
+/* 3. HOVER: Bright Blue background + Black text */
 .top-bar-section ul li > a:hover {
- background-color: #00BFFF !important; /* Bright Blue */
- color: #000000 !important;          /* Black Text */
+    background-color: #00BFFF !important; /* Bright Blue */
+    color: #000000 !important;          /* Black text */
 }
 
-/* 4. THE ACTIVE STATE: Highlight the page you are currently on */
+/* 4. ACTIVE: Page you are currently on */
 .top-bar-section li.active > a,
 .top-bar-section li.active:not(.has-form) a {
- background-color: #408bdc !important; /* A slightly different blue for 'Active' */
- color: #ffffff !important;
+    background-color: #408bdc !important; 
+    color: #ffffff !important;
 }
 
-/* 5. Vertical Separator Lines */
+/* 5. Logo Size Fix */
+.top-bar .title-area img, 
+.name img, 
+.logo img {
+    max-height: 40px !important;
+    width: auto !important;
+    margin-top: 4px !important;
+}
+
+/* 6. Vertical Borders (Optional) */
 .top-bar-section ul li:not(:last-child) {
- border-right: 1px solid rgba(255,255,255,0.1) !important; 
+    border-right: 1px solid rgba(255, 255, 255, 0.1) !important; 
 }
 
 /* =========================================
