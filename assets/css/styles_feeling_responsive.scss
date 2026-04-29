@@ -158,43 +158,46 @@ nav.top-bar img {
    GLOBAL LOGO & COLOR FIX
    ========================================= */
 
-/* 1. Resize the Logo Everywhere (Nav Bar & Sub-page Headers) */
-.top-bar .title-area img, 
-.name img, 
-.logo img,
-header img, 
-.entry-title img, 
-#masthead img {
-    max-height: 75px !important;  /* Keeps it slim in the nav bar */
-    max-width: 75px !important;  /* Prevents it from exploding on sub-pages */
-    width: auto !important;
-    height: auto !important;
-    display: inline-block !important;
-    vertical-align: middle !important;
-    margin-top: 4px !important;
-    padding: 5px 0 !important;
+/* 1. Force the container to be tiny on sub-pages */
+.header-content .row .columns, 
+.entry-title .row .columns,
+header[role="banner"] .row .columns {
+    max-width: 200px !important;
+    margin: 0 auto !important; /* Centers it */
+    float: none !important;    /* Prevents weird layout shifts */
 }
 
-/* 2. Apply the Dark Cyan Color to the Logo Everywhere */
-.top-bar .title-area img, 
-.name img, 
-header img, 
-.entry-title img {
+/* 2. Force the image inside those containers to shrink */
+.header-content img, 
+.entry-title img, 
+header[role="banner"] img {
+    max-height: 100px !important;
+    width: auto !important;
     filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
 }
 
-/* 3. Give the Logo some breathing room on the left */
-.title-area {
-    padding-left: 15px !important;
+/* 3. Keep the Nav Bar logo small but visible */
+.top-bar .title-area img {
+    max-height: 40px !important;
+    width: auto !important;
+    margin-top: 5px !important;
 }
 
-/* Ensure the container doesn't expand to fit a ghost image size */
-.top-bar .title-area, .top-bar .name {
-    max-height: 45px !important;
-    overflow: hidden;
+/* This kills the giant 'Hero' logo on sub-pages */
+.entry-title img, 
+.header-content img, 
+header[role="banner"] img,
+article header img {
+    max-height: 80px !important; /* Force it small */
+    width: auto !important;
+    margin: 0 auto 20px auto !important; /* Centers it with space below */
+    display: block !important;
+    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
 }
 
-.image-fullwidth, .full-width-header {
-    max-height: 250px !important;
+/* If there is a giant empty space left behind, shrink the container */
+#masthead, .full-width-header, .header-content {
+    padding: 10px 0 !important;
+    min-height: 0 !important;
     height: auto !important;
 }
