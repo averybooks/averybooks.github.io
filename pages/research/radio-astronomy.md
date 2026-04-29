@@ -35,8 +35,7 @@ determine the readings are made of 4 distinct parcels of gas each experiencing
 different parameters. Our best constrained upper limit temperature measurement
 is Tupper = 3984 ± 706 K, which still has an error of ≈ 17% which is poorly
 constrained..  </p>
-    <a href="{{ '/assets/pdfs/Radio Astronomy (Astro 121) Lab Report 2.pdf' | relative_url }}" target="_blank" class="button small secondary">Preview Report</a>
-    <a href="{{ '/assets/pdfs/Radio Astronomy (Astro 121) Lab Report 2.pdf' | relative_url }}" class="button small">Download PDF</a>
+    <a href="{{ '/assets/pdfs/Radio Astronomy (Astro 121) Lab Report 2.pdf' | relative_url }}" target="_blank" class="button small secondary">View Report</a>
   </div>
 </div>
 
@@ -54,7 +53,6 @@ of the first zero-crossing. We derived a solar angular diameter of 31 arcminutes
 close to the accepted value of 32 arcminutes with a highly accurate 3.125% error.
 Remaining discrepancies are analyzed in the context of solar limb darkening and bandwidth smearing. These results successfully validate both the robust hard-
 ware calibration of the New Campbell Hall array and the foundational theoretical framework of aperture synthesis.</p>
-    <a href="{{ '/assets/pdfs/Radio Astronomy (Astro 121) Lab Report 3.pdf' | relative_url }}" target="_blank" class="button small secondary">Preview Report</a>
-    <a href="{{ '/assets/pdfs/Radio Astronomy (Astro 121) Lab Report 3.pdf' | relative_url }}" class="button small">Download PDF</a>
+    <a href="{{ '/assets/pdfs/Radio Astronomy (Astro 121) Lab Report 3.pdf' | relative_url }}" target="_blank" class="button small secondary">View Report</a>
   </div>
 </div>

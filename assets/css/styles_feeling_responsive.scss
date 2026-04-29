@@ -154,25 +154,38 @@ nav.top-bar img {
 }
 
 /* This targets the giant logo on the homepage / masthead */
-#masthead img, 
-.entry-title img,
-header img {
-    max-width: 200px !important; /* Adjust this to your preferred size */
-    height: auto !important;
-}
+/* =========================================
+   GLOBAL LOGO & COLOR FIX
+   ========================================= */
 
-.title-area {
-    padding-left: 15px;
-}
-
-/* Target the logo inside the Navigation Bar on ALL pages */
-.top-bar .title-area .logo img,
-.top-bar .title-area img,
-.name img {
-    max-height: 40px !important; /* Force it to fit the bar height */
+/* 1. Resize the Logo Everywhere (Nav Bar & Sub-page Headers) */
+.top-bar .title-area img, 
+.name img, 
+.logo img,
+header img, 
+.entry-title img, 
+#masthead img {
+    max-height: 40px !important;  /* Keeps it slim in the nav bar */
+    max-width: 150px !important;  /* Prevents it from exploding on sub-pages */
     width: auto !important;
-    padding: 5px 0 !important;
+    height: auto !important;
     display: inline-block !important;
+    vertical-align: middle !important;
+    margin-top: 4px !important;
+    padding: 2px 0 !important;
+}
+
+/* 2. Apply the Dark Cyan Color to the Logo Everywhere */
+.top-bar .title-area img, 
+.name img, 
+header img, 
+.entry-title img {
+    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
+}
+
+/* 3. Give the Logo some breathing room on the left */
+.title-area {
+    padding-left: 15px !important;
 }
 
 /* Ensure the container doesn't expand to fit a ghost image size */
