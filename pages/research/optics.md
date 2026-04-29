@@ -16,9 +16,9 @@ Single photon microscopy utilizes physical principles of stochastic, time varied
 
 <div class="row">
   <div class="large-12 columns">
-    <iframe src="{{ site.url }}/assets/pdfs/Optical Engineering (EE218) Single Photon Microscopy - Avery Books Section.pdf" width="100%" height="800px">
+    <iframe src="{{ '/assets/pdfs/optica-engineering-pres.pdf' | relative_url }}" width="100%" height="800px">
     <p>This browser does not support PDFs. Please download the PDF to view it: 
-    <a href="{{ site.url }}/assets/pdfs/Optical Engineering (EE218) Single Photon Microscopy - Avery Books Section.pdf">Download PDF</a>.</p>
+    <a href="{{ '/assets/pdfs/optica-engineering-pres.pdf' | relative_url }}">Download PDF</a>.</p>
     </iframe>
   </div>
 
@@ -29,6 +29,6 @@ Single photon microscopy utilizes physical principles of stochastic, time varied
       <li><strong>Lab:</strong> Electrical Engineering 218A</li>
       <li><strong>Topic:</strong> Single Photon Microscopy</li>
     </ul>
-    <a href="{{ site.url }}/assets/pdfs/Optical Engineering (EE218) Single Photon Microscopy - Avery Books Section.pdf" class="button small expand">Download Full PDF</a>
+    <a href="{{ '/assets/pdfs/optica-engineering-pres.pdf' | relative_url }}" class="button small expand">Download Full PDF</a>
   </div>
 </div>
