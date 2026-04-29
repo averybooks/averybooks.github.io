@@ -165,14 +165,14 @@ nav.top-bar img {
 header img, 
 .entry-title img, 
 #masthead img {
-    max-height: 100px !important;  /* Keeps it slim in the nav bar */
-    max-width: 100px !important;  /* Prevents it from exploding on sub-pages */
+    max-height: 50px !important;  /* Keeps it slim in the nav bar */
+    max-width: 50px !important;  /* Prevents it from exploding on sub-pages */
     width: auto !important;
     height: auto !important;
     display: inline-block !important;
     vertical-align: middle !important;
     margin-top: 4px !important;
-    padding: 15px 0 !important;
+    padding: 5px 0 !important;
 }
 
 /* 2. Apply the Dark Cyan Color to the Logo Everywhere */
