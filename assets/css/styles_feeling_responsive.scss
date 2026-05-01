@@ -103,69 +103,56 @@ HEADER & NAVIGATION FINAL FIX
     color: #ffffff !important;
 }
 
-/* 5. Logo Size Fix */
-.top-bar .title-area img, 
-.name img, 
-.logo img {
-    max-height: 80px !important;
-    width: auto !important;
-    margin-top: 4px !important;
-}
+// /* 5. Logo Size Fix */
+// .top-bar .title-area img, 
+// .name img, 
+// .logo img {
+//     max-height: 80px !important;
+//     width: auto !important;
+//     margin-top: 4px !important;
+// }
 
-/* 6. Vertical Borders (Optional) */
-.top-bar-section ul li:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.1) !important; 
-}
+// /* 6. Vertical Borders (Optional) */
+// .top-bar-section ul li:not(:last-child) {
+//     border-right: 1px solid rgba(255, 255, 255, 0.1) !important; 
+// }
 
-/* =========================================
-   REMOVING WHITE SPACE / EXPANDING PAGE
-   ========================================= */
+// /* =========================================
+//    REMOVING WHITE SPACE / EXPANDING PAGE
+//    ========================================= */
 
-/* 1. Expand the maximum width of all rows */
-.row {
-    max-width: 95% !important; /* Changes from a fixed pixel width to 95% of the screen */
-}
+// /* 1. Expand the maximum width of all rows */
+// .row {
+//     max-width: 95% !important; /* Changes from a fixed pixel width to 95% of the screen */
+// }
 
-/* 2. Remove padding from the main content wrapper */
-#main {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
+// /* 2. Remove padding from the main content wrapper */
+// #main {
+//     padding-left: 0 !important;
+//     padding-right: 0 !important;
+// }
 
-/* 3. If your theme has a 't-container', expand it too */
-.t-container {
-    max-width: 95% !important;
-}
-/* Add breathing room between the logo and the first menu item */
-.top-bar .title-area {
-    margin-right: 20px !important;
-}
+// /* 3. If your theme has a 't-container', expand it too */
+// .t-container {
+//     max-width: 95% !important;
+// }
+// /* Add breathing room between the logo and the first menu item */
+// .top-bar .title-area {
+//     margin-right: 20px !important;
+// }
 
-/* Target the logo in the navigation bar */
-/* This targets the logo in the top navigation bar specifically */
-nav.top-bar .title-area .logo img,
-nav.top-bar .title-area .name img,
-nav.top-bar img {
-    max-height: 38px !important; /* Slightly smaller for a cleaner look */
-    width: auto !important;
-    display: inline-block !important;
-    vertical-align: middle !important;
-    margin-top: 4px !important; /* Centers it vertically */
-}
+// /* Target the logo in the navigation bar */
+// /* This targets the logo in the top navigation bar specifically */
+// nav.top-bar .title-area .logo img,
+// nav.top-bar .title-area .name img,
+// nav.top-bar img {
+//     max-height: 38px !important; /* Slightly smaller for a cleaner look */
+//     width: auto !important;
+//     display: inline-block !important;
+//     vertical-align: middle !important;
+//     margin-top: 4px !important; /* Centers it vertically */
+// }
 
-/* This targets the giant logo on the homepage / masthead */
-/* =========================================
-   GLOBAL LOGO & COLOR FIX
-   ========================================= */
-
-/* 1. Force the container to be tiny on sub-pages */
-.header-content .row .columns, 
-.entry-title .row .columns,
-header[role="banner"] .row .columns {
-    max-width: 200px !important;
-    margin: 0 auto !important; /* Centers it */
-    float: none !important;    /* Prevents weird layout shifts */
-}
 
 /* 2. Force the image inside those containers to shrink */
 .header-content img, 
@@ -176,28 +163,49 @@ header[role="banner"] img {
     filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
 }
 
-/* 3. Keep the Nav Bar logo small but visible */
-.top-bar .title-area img {
-    max-height: 40px !important;
-    width: auto !important;
-    margin-top: 5px !important;
+/* =========================================
+   LOGO VISIBILITY: HOMEPAGE ONLY
+   ========================================= */
+
+/* 1. KILL ALL LOGOS GLOBALLY (Both Nav Bar and Giant Headers) */
+.top-bar .title-area img, 
+.name img, 
+.logo img,
+header img, 
+.entry-title img, 
+.header-content img,
+article header img,
+#masthead img {
+    display: none !important;
 }
 
-/* This kills the giant 'Hero' logo on sub-pages */
-.entry-title img, 
-.header-content img, 
-header[role="banner"] img,
-article header img {
-    max-height: 80px !important; /* Force it small */
+/* 2. BRING THE LOGOS BACK ONLY ON THE HOMEPAGE */
+/* The theme uses the .frontpage class on the body for the home page */
+
+/* Bring back the small Nav Bar logo on the homepage */
+body.frontpage .top-bar .title-area img,
+body.frontpage .name img,
+body.frontpage .logo img {
+    display: inline-block !important;
+    max-height: 40px !important;
     width: auto !important;
-    margin: 0 auto 20px auto !important; /* Centers it with space below */
-    display: block !important;
+    margin-top: 4px !important;
     filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
 }
 
-/* If there is a giant empty space left behind, shrink the container */
-#masthead, .full-width-header, .header-content {
-    padding: 10px 0 !important;
-    min-height: 0 !important;
+/* Bring back the Main Hero logo on the homepage */
+body.frontpage #masthead img,
+body.frontpage header img {
+    display: block !important;
+    max-width: 250px !important; /* Keeps your homepage logo the right size */
     height: auto !important;
+    margin: 0 auto !important;
+    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
+}
+
+/* 3. CLEAN UP EMPTY SPACE ON SUB-PAGES */
+/* This removes the giant empty gaps left behind when the logo is hidden */
+.header-content, .full-width-header, .entry-title {
+    padding: 0 !important;
+    min-height: 0 !important;
 }
