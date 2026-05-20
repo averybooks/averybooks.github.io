@@ -13,7 +13,7 @@ This page contains 3 lab reports from the UC Berkeley Undergraduate Radio Lab co
 #### Full Reports
 <div class="row" style="margin-bottom: 50px; border-bottom: 1px solid #eee; padding-bottom: 40px;">
   <div class="medium-4 columns">
-    <img src="{{ '/assets/img/baseline_chisq.png' | relative_url }}" alt="Pulsar Timing" style="border-radius: 4px;">
+    <img src="{{ '/assets/img/nps_velocity_final.png' | relative_url }}" alt="Pulsar Timing" style="border-radius: 4px;">
   </div>
   <div class="medium-8 columns">
     <h3>The Kinematic, Mass, and Temperature Characterization of the North Polar Spur</h3>
