@@ -10,6 +10,8 @@ This is the research into the Farnswirth-Hirsch fusor. The current objective is 
 
 The following image is an output from the code for a 6 ring spherical grid geometry. This, as of right now, is the optimal geometry for plasma confinement in the spherical style. Note that an in depth analysis of why and the exact differences between geometry types and ring amount is still being conducted. Additionally, analysis of the ion density correlation with the simulated ion trajectories is being conducted as well. The following graph has large amounts of "stray" ion density, however there is significantly less "stray" ion trajectories in the MHD simulation.
 
+Code can be found at: https://github.com/averybooks/Farnswirth-Hirsch-Fusor
+
 <div style="text-align: center; margin: 20px 0;">
   <img src="{{ '/assets/images/6ringspherical.png' | relative_url }}" 
        alt="6 Ring spherical geometry grid" 
