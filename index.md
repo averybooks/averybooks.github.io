@@ -6,7 +6,13 @@ header:
   image_fullwidth: "header_homepage.jpg"
 ---
 ### Introduction
-I'm a Undergraduate Astrophysics student at Univeristy of California, Berkeley. My specialty is RF implementation and I am actively exploring photonics, demonstrated in my recent RF lab coursework and my quantum computing cost analysis research. I am focused on utilizing my skillset in physics, engineering, and working with people to create new technologies and services that enable innovation in other fields. When I'm not being a scientists I am training for archery, I enjoy the art of precision.
+I am a Masters Photonics student at Johns Hopkins University and an Astrophysics BA graduate from UC Berkeley. My specialties include RF collection and analysis, and magnetohydrodynamics simulation. I am actively resaerching into topological laser and laser asymmetries within my classwork. Other research topics include Quantum Computation algorithm cost analysis and single photon microscopy optical engineering.
+
+My current project is a Farnswirth-Hirsch fusor and is currently only in the simulation stage with the goal of optimizing and understanding grid geometries. The goal is to design and build a working model.
+
+When I am not designing and simulating. I am training archery or boxing, as I enjoy the art of precision.
+
+You can find much of my analysis code for RF and the fusor project at https://github.com/averybooks . 
 
 ### Hard Skills
 * Magnetohydrodynamics python simulation
