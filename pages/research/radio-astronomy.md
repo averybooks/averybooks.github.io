@@ -6,7 +6,7 @@ header: no
 ---
 
 ### Abstract
-This page contains 3 lab reports from the UC Berkeley Undergraduate Radio Lab course. Topics and goals include interferometry and radio frequency mapping. The primary objectives of these projects were to develop practical scientific experiemntal skills and developing the ability to produce conclusions that have sound reasoning such that we can be confident in our outcomes.
+This page contains 3 lab reports from the UC Berkeley Undergraduate Radio Lab course. Topics and goals include interferometry and radio frequency mapping. The primary objectives of these projects were to develop practical scientific experiemntal skills and developing the ability to produce conclusions that have sound reasoning such that we can be confident in our outcomes. Code can be found here https://github.com/averybooks/radiolab2026-Cal . For this lab, I wrote a python package called 'rafpy' that contains radio frequency analysis functions. Note that not all functions within the package are generally helpful, the package was designed with the course requirements and needs in mind. 
 
 <hr>
 
