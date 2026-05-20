@@ -6,7 +6,7 @@ header: no
 ---
 
 ### Abstract
-This research explores the qubit cost of a physical Shor's quantum factoring algorithm with Quantum Error Correction (QEC). We first categorize and select the necessary gates for a decomposed Shor's algorithm oracle. Then, decompose the oracle to basic universal gate set: X, Z, and CNOT. We determine the necessary amount of qubits and gate costs associate with the oracle itself. Then we decompose the surface error correction code architecture and address the theoretical qubit complexity for the surface code through math analysis. We get to INSERT THE ACTUAL DATA HERE. This is a match of the current state of the art theory, and to within error log of experimental research, which was determined to be negligible in practice.
+This research explores the qubit cost of a physical Shor's quantum factoring algorithm with Quantum Error Correction (QEC). We first categorize and select the necessary gates for a decomposed Shor's algorithm oracle. Then, decompose the oracle to basic universal gate set: X, Z, and CNOT. We determine the necessary amount of qubits and gate costs associate with the oracle itself. Then we decompose the surface error correction code architecture and address the theoretical qubit complexity for the surface code through math analysis. We get to order N_L * log(N_L)^2 where N_L is the number of logic qubits. This is a match of the current state of the art theory, and to within error log of experimental research, which was determined to be negligible in practice.
 
 <hr>
 
