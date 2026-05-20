@@ -103,55 +103,62 @@ HEADER & NAVIGATION FINAL FIX
     color: #ffffff !important;
 }
 
-// /* 5. Logo Size Fix */
-// .top-bar .title-area img, 
-// .name img, 
-// .logo img {
-//     max-height: 80px !important;
-//     width: auto !important;
-//     margin-top: 4px !important;
-// }
+/* =========================================
+   LOGO VISIBILITY: HOMEPAGE ONLY
+   ========================================= */
 
-// /* 6. Vertical Borders (Optional) */
-// .top-bar-section ul li:not(:last-child) {
-//     border-right: 1px solid rgba(255, 255, 255, 0.1) !important; 
-// }
+/* -----------------------------------------
+   1. SUB-PAGES (CONTENT PAGES): HIDE EVERYTHING
+   ----------------------------------------- */
+body:not(.frontpage) .top-bar img,
+body:not(.frontpage) .name img,
+body:not(.frontpage) .logo img,
+body:not(.frontpage) header img,
+body:not(.frontpage) #masthead img,
+body:not(.frontpage) .entry-title img,
+body:not(.frontpage) .header-content img {
+    display: none !important;
+}
 
-// /* =========================================
-//    REMOVING WHITE SPACE / EXPANDING PAGE
-//    ========================================= */
+/* Collapse the empty header gap left behind on sub-pages */
+body:not(.frontpage) #masthead,
+body:not(.frontpage) .full-width-header,
+body:not(.frontpage) .header-logo-only,
+body:not(.frontpage) header[role="banner"] {
+    display: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
 
-// /* 1. Expand the maximum width of all rows */
-// .row {
-//     max-width: 95% !important; /* Changes from a fixed pixel width to 95% of the screen */
-// }
+/* -----------------------------------------
+   2. HOMEPAGE: SHOW & RESIZE
+   ----------------------------------------- */
 
-// /* 2. Remove padding from the main content wrapper */
-// #main {
-//     padding-left: 0 !important;
-//     padding-right: 0 !important;
-// }
+/* Show the small Nav Bar logo on the homepage */
+body.frontpage .top-bar .title-area img,
+body.frontpage .name img,
+body.frontpage .logo img {
+    display: inline-block !important;
+    max-height: 40px !important;
+    width: auto !important;
+    margin-top: 4px !important;
+}
 
-// /* 3. If your theme has a 't-container', expand it too */
-// .t-container {
-//     max-width: 95% !important;
-// }
-// /* Add breathing room between the logo and the first menu item */
-// .top-bar .title-area {
-//     margin-right: 20px !important;
-// }
+/* Show the Main Hero logo on the homepage (if your homepage has one) */
+body.frontpage #masthead img,
+body.frontpage header img {
+    display: block !important;
+    max-width: 200px !important; /* Controls homepage size */
+    height: auto !important;
+    margin: 0 auto !important;
+}
 
-// /* Target the logo in the navigation bar */
-// /* This targets the logo in the top navigation bar specifically */
-// nav.top-bar .title-area .logo img,
-// nav.top-bar .title-area .name img,
-// nav.top-bar img {
-//     max-height: 38px !important; /* Slightly smaller for a cleaner look */
-//     width: auto !important;
-//     display: inline-block !important;
-//     vertical-align: middle !important;
-//     margin-top: 4px !important; /* Centers it vertically */
-// }
+/* Apply your signature Dark Cyan filter ONLY to the homepage logo */
+body.frontpage img {
+    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
+}
 
 
 /* 2. Force the image inside those containers to shrink */

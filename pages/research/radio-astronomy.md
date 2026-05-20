@@ -2,6 +2,7 @@
 layout: page
 title: "Optics"
 permalink: /research/radio-astronomy/
+header: no
 ---
 
 ### Abstract
