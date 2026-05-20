@@ -156,7 +156,7 @@ body.frontpage #masthead img,
 body.frontpage header img,
 body.frontpage .header-content img {
     display: block !important;
-    max-width: 300px !important; /* <--- CHANGE THIS NUMBER */
+    max-width: 500px !important; /* <--- CHANGE THIS NUMBER */
     height: auto !important;
     margin: 0 auto !important;
 }
@@ -166,7 +166,7 @@ body.frontpage .top-bar .title-area img,
 body.frontpage .name img,
 body.frontpage .logo img {
     display: inline-block !important;
-    max-height: 40px !important; /* <--- CHANGE THIS NUMBER */
+    max-height: 100px !important; /* <--- CHANGE THIS NUMBER */
     width: auto !important;
     margin-top: 4px !important;
 }
