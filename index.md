@@ -1,5 +1,5 @@
 ---
-layout: page-fullwidth
+layout: frontpage
 title: "Avery Books Digital Portfolio"
 meta_description: "Welcome to my portfolio website."
 header:

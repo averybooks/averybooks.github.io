@@ -50,9 +50,10 @@ sitemap:
 
 
 /* =========================================
-   CUSTOM NAVIGATION OVERRIDES
+   CUSTOM NAVIGATION BAR STYLES
    ========================================= */
-/* 1. Force the background for the entire header bar */
+
+/* 1. Main Header Bar Colors & Backgrounds */
 .top-bar, 
 .top-bar-section, 
 .top-bar-section ul, 
@@ -62,21 +63,6 @@ sitemap:
 .top-bar .name,
 .top-bar .name h1 a {
     background-color: #123459 !important; 
-    background: #123459 !important;
-}
-
-/* =========================================
-HEADER & NAVIGATION FINAL FIX
-========================================= */
-
-/* =========================================
-   HEADER & NAVIGATION - VERIFIED CLEAN CODE
-   ========================================= */
-
-/* 1. Main Header Bar Colors */
-.top-bar, 
-.top-bar-section, 
-.top-bar-section ul {
     background: #123459 !important;
     border: none !important;
     box-shadow: none !important;
@@ -104,11 +90,11 @@ HEADER & NAVIGATION FINAL FIX
 }
 
 /* =========================================
-   LOGO VISIBILITY: HOMEPAGE ONLY
+   LOGO VISIBILITY RULES
    ========================================= */
 
 /* -----------------------------------------
-   1. SUB-PAGES (CONTENT PAGES): HIDE EVERYTHING
+   A. SUB-PAGES (CONTENT/LAB PAGES): HIDE EVERYTHING
    ----------------------------------------- */
 body:not(.frontpage) .top-bar img,
 body:not(.frontpage) .name img,
@@ -116,24 +102,28 @@ body:not(.frontpage) .logo img,
 body:not(.frontpage) header img,
 body:not(.frontpage) #masthead img,
 body:not(.frontpage) .entry-title img,
-body:not(.frontpage) .header-content img {
+body:not(.frontpage) .header-content img,
+body:not(.frontpage) article header img {
     display: none !important;
 }
 
-/* Collapse the empty header gap left behind on sub-pages */
+/* Collapse the empty header gap entirely on sub-pages */
 body:not(.frontpage) #masthead,
 body:not(.frontpage) .full-width-header,
 body:not(.frontpage) .header-logo-only,
-body:not(.frontpage) header[role="banner"] {
+body:not(.frontpage) header[role="banner"],
+body:not(.frontpage) .header-content,
+body:not(.frontpage) .entry-title {
     display: none !important;
     height: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
     border: none !important;
+    min-height: 0 !important;
 }
 
 /* -----------------------------------------
-   2. HOMEPAGE: SHOW & RESIZE
+   B. HOMEPAGE: SHOW & RESIZE LOGOS
    ----------------------------------------- */
 
 /* Show the small Nav Bar logo on the homepage */
@@ -146,11 +136,12 @@ body.frontpage .logo img {
     margin-top: 4px !important;
 }
 
-/* Show the Main Hero logo on the homepage (if your homepage has one) */
+/* Show the Main Hero logo on the homepage */
 body.frontpage #masthead img,
-body.frontpage header img {
+body.frontpage header img,
+body.frontpage .header-content img {
     display: block !important;
-    max-width: 200px !important; /* Controls homepage size */
+    max-width: 200px !important; /* Controls your homepage logo size */
     height: auto !important;
     margin: 0 auto !important;
 }
@@ -158,61 +149,4 @@ body.frontpage header img {
 /* Apply your signature Dark Cyan filter ONLY to the homepage logo */
 body.frontpage img {
     filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
-}
-
-
-/* 2. Force the image inside those containers to shrink */
-.header-content img, 
-.entry-title img, 
-header[role="banner"] img {
-    max-height: 100px !important;
-    width: auto !important;
-    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
-}
-
-/* =========================================
-   LOGO VISIBILITY: HOMEPAGE ONLY
-   ========================================= */
-
-/* 1. KILL ALL LOGOS GLOBALLY (Both Nav Bar and Giant Headers) */
-.top-bar .title-area img, 
-.name img, 
-.logo img,
-header img, 
-.entry-title img, 
-.header-content img,
-article header img,
-#masthead img {
-    display: none !important;
-}
-
-/* 2. BRING THE LOGOS BACK ONLY ON THE HOMEPAGE */
-/* The theme uses the .frontpage class on the body for the home page */
-
-/* Bring back the small Nav Bar logo on the homepage */
-body.frontpage .top-bar .title-area img,
-body.frontpage .name img,
-body.frontpage .logo img {
-    display: inline-block !important;
-    max-height: 40px !important;
-    width: auto !important;
-    margin-top: 4px !important;
-    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
-}
-
-/* Bring back the Main Hero logo on the homepage */
-body.frontpage #masthead img,
-body.frontpage header img {
-    display: block !important;
-    max-width: 250px !important; /* Keeps your homepage logo the right size */
-    height: auto !important;
-    margin: 0 auto !important;
-    filter: invert(41%) sepia(90%) saturate(452%) hue-rotate(130deg) brightness(95%) contrast(101%) !important;
-}
-
-/* 3. CLEAN UP EMPTY SPACE ON SUB-PAGES */
-/* This removes the giant empty gaps left behind when the logo is hidden */
-.header-content, .full-width-header, .entry-title {
-    padding: 0 !important;
-    min-height: 0 !important;
 }
