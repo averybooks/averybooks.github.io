@@ -15,6 +15,6 @@ Code can be found at: https://github.com/averybooks/Farnswirth-Hirsch-Fusor
 <div style="text-align: center; margin: 20px 0;">
   <img src="{{ '/assets/images/6ringspherical.png' | relative_url }}" 
        alt="6 Ring spherical geometry grid" 
-       style="max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; display: inline-block;">
+       style="max-width: 150%; height: auto; border: 1px solid #ddd; border-radius: 4px; display: inline-block;">
   <p style="font-style: italic; color: #666; margin-top: 5px;">Figure 1: Notice the boundary conditions on the electric potential and electric field graphs correlating strongly with the ion trajectories. However, note how in both the XZ and XY planes the ion density shows high amounts of jets outside of the +- 5 cm radial distance from the center. </p>
 </div>
